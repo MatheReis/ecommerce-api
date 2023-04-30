@@ -1,12 +1,12 @@
 {
   "name": "api-ecommerce",
   "version": "1.0.0",
-  "main": "./server.js",
+  "main": "./dist/server.js",
   "license": "MIT",
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "node server.ts",
+    "start": "node ./dist/src/server.js",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
   },
   "engines": {
