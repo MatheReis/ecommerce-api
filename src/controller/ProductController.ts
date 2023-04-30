@@ -15,7 +15,7 @@ class ProductController {
   }
 
   async create(request: Request, response: Response) {
-    const { name, imageUrl, price, discount = 0, description } = request.body;
+    const { name, imageUrl, price, discount = 0, description, category } = request.body;
 
     try {
       const productExists = await Product.findOne({ name });
@@ -33,6 +33,7 @@ class ProductController {
         price,
         discount,
         description,
+        category,
       });
 
       return response.json(product);

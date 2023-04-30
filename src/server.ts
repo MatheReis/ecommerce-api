@@ -1,20 +1,14 @@
 import express from "express";
 import mongoose from "mongoose";
+import routes from "./routes";
 
 const app = express();
 
 mongoose.connect("mongodb://localhost/ecommerce");
-mongoose.set('strictQuery', false);
 
 app.use(express.json());
 app.use(routes);
 
-const PORT = 3000;
-
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+app.listen(3000, () => {
+  console.log("Server is listening on port 3000");
 });
-function routes(routes: any) {
-  throw new Error("Function not implemented.");
-}
-
