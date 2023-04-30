@@ -6,15 +6,6 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
-}
-
-model Product {
-  name     String  @unique @id @default(cuid())
-  imageUrl String 
-  price    Int    
-  discount Int
-  description String
-  category String
 }
