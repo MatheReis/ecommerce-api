@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
     "ts-node-dev": "^2.0.0",
