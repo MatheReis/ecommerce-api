@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "node src/server.ts",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
-  },    
+  },
   "engines": {
     "node": ">=16.0.0"
   },
