@@ -64,11 +64,11 @@ var ProductController = /** @class */ (function () {
     };
     ProductController.prototype.create = function (request, response) {
         return __awaiter(this, void 0, void 0, function () {
-            var _a, name, imageUrl, price, _b, discount, description, category, productExists, product, error_2;
+            var _a, name, imageUrl, price, _b, discount, description, productExists, product, error_2;
             return __generator(this, function (_c) {
                 switch (_c.label) {
                     case 0:
-                        _a = request.body, name = _a.name, imageUrl = _a.imageUrl, price = _a.price, _b = _a.discount, discount = _b === void 0 ? 0 : _b, description = _a.description, category = _a.category;
+                        _a = request.body, name = _a.name, imageUrl = _a.imageUrl, price = _a.price, _b = _a.discount, discount = _b === void 0 ? 0 : _b, description = _a.description;
                         _c.label = 1;
                     case 1:
                         _c.trys.push([1, 4, , 5]);
@@ -87,7 +87,6 @@ var ProductController = /** @class */ (function () {
                                 price: price,
                                 discount: discount,
                                 description: description,
-                                category: category,
                             })];
                     case 3:
                         product = _c.sent();
