@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "node -r esm ./dist/server.js",
+    "start": "node -r esm ./dist/server.ts",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
-  },  
+  },
   "engines": {
     "node": ">=16.0.0"
   },
