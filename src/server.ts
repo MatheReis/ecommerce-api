@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 const app = express();
 
 mongoose.connect("mongodb://localhost/ecommerce");
+mongoose.set('strictQuery', false);
 
 app.use(express.json());
 app.use(routes);
