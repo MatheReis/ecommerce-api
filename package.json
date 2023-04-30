@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
   },  
   "engines": {
     "node": ">=16.0.0"
